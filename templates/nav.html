@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Page</title>
+
+    <meta charset="UTF-8">
+    <title>{{ name }}</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styleFile.css' %}"/>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="./" class="brand-logo center">BooksPage</a>
+          <ul class="left hide-on-med-and-down">
+            <li class="active"><a href="./">Home</a></li>
+            <li>Other Option</li>
+          </ul>
+        </div>
+      </nav>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    {% load static %}
+    <script type="text/javascript" src="{% static 'scripts/mngTable.js' %}"></script>
+</body>
+</html>

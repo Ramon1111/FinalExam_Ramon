@@ -1,0 +1,42 @@
+{% extends "nav.html" %}
+
+{% block content %}
+
+
+    <div class="container addMargin">
+
+        <form action="#">
+        {% csrf_token %}
+          <label>
+            <input type="checkbox" class="checkBoxes"/>
+            <span>Information</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="checkBoxes"/>
+            <span>Algorithm</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="checkBoxes"/>
+            <span>Data</span>
+          </label>
+
+  </form>
+        <table id="mainTable" class="display highlight responsive-table" style="">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>ISBN13</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

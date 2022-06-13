@@ -1,0 +1,12 @@
+#mainTable {
+    max-height: 4rem !important;
+    overflow: scroll;
+}
+
+label{
+    margin-left: 2rem !important;
+}
+
+.addMargin{
+    margin-top: 2rem;
+}
