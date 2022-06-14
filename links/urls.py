@@ -7,6 +7,7 @@ app_name = "links"
 
 urlpatterns = [
     path('', views.main, name = 'First'),
-    path('checkTables/', views.checkTables, name = 'checkTables'),
-    #path('upGenres/', views.list_genres),
+    path('main/', views.main, name = 'First'),
+    path('pricesFilter/', views.pricesFilter, name = 'pricesFilter'),
+
 ]

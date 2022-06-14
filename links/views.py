@@ -9,10 +9,12 @@ from django.shortcuts import render
 
 # Create your views here.
 def main(request):
-    name = 'Rifadoooo'
+    name = 'Main Page'
     temp = loader.get_template('table_links.html')
     context = {
         'name': name,
+        'link1': './',
+        'link2': './pricesFilter'
     }
     return HttpResponse(temp.render(context, request))
 
@@ -30,3 +32,13 @@ def checkTables(request):
     }
 
     return JsonResponse(context, status=200)
+
+def pricesFilter(request):
+    name = 'Price Filter'
+    temp = loader.get_template('rangePrices.html')
+    context = {
+        'name': name,
+        'link1': '../',
+        'link2': './',
+    }
+    return HttpResponse(temp.render(context, request))

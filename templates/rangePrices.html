@@ -6,27 +6,12 @@
     <div class="container addMargin">
 
         <div>
-            <h4 class="center-align">Main Book Searcher</h4>
+            <h4 class="center-align">Search by Price Range</h4>
         </div>
 
-        <form action="#">
-        {% csrf_token %}
-          <label>
-            <input type="checkbox" class="checkBoxes"/>
-            <span>Information</span>
-          </label>
+        <div id="sliderRange" class="addMarginD"></div>
 
-          <label>
-            <input type="checkbox" class="checkBoxes"/>
-            <span>Algorithm</span>
-          </label>
 
-          <label>
-            <input type="checkbox" class="checkBoxes"/>
-            <span>Data</span>
-          </label>
-
-  </form>
         <table id="mainTable" class="display highlight responsive-table" style="">
             <thead>
                 <tr>
@@ -42,5 +27,7 @@
             </tbody>
         </table>
     </div>
+
+
 
 {% endblock %}
